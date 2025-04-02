@@ -1,0 +1,22 @@
+run = "start"
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "start"]
+
+[workflows]
+runButton = "C++ Runner"
+
+[[workflows.workflow]]
+name = "C++ Runner"
+author = 5597323
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "g++ test1.cpp -o main"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./main"
