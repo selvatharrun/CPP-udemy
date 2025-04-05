@@ -15,7 +15,7 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "g++ test1.cpp -o main"
+args = "g++ frankscarp.cpp -o main"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
