@@ -24,14 +24,14 @@ int main(){
     const int price_per_room{30};
     cout <<"\nthe price per room is:"<<price_per_room<<endl;
 
-    int cost{number_of_rooms * price_per_room};
+    double cost{number_of_rooms * price_per_room};
     cout<<"the cost is:"<<cost<<endl;
 
     const double tax_rate{0.06};
-    int tax{tax_rate*cost};
+    double tax{tax_rate*cost};
     cout<<"the tax charged is:"<<tax<<endl;
 
-    int estimate = cost + tax;
+    double estimate = cost + tax;
     cout<<"the estimate is:"<<estimate<<endl;
 
 }

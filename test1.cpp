@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
+    /*
     int age;
     cout << "I am " << age << " years old.";
     unsigned int a = 10;
@@ -14,4 +15,16 @@ int main(){
     #define c 1000;
     cout << c << endl;
     return 0;
+    */
+    int a [] {};
+    for(int i=0;i<10;i++){
+        a[i]=i;
+    }
+    for(int i=0;i<10;i++){
+        cout<<a[i]<<",";
+        if(a[i]==a[-1]){
+            cout<<endl;
+        }
+    }
+    
 }
