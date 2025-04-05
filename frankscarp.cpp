@@ -31,8 +31,7 @@ int main(){
     int tax{tax_rate*cost};
     cout<<"the tax charged is:"<<tax<<endl;
 
-    const int estimate{0};
-    estimate = cost+ tax;
+    int estimate = cost + tax;
     cout<<"the estimate is:"<<estimate<<endl;
 
 }
