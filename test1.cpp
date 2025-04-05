@@ -16,15 +16,16 @@ int main(){
     cout << c << endl;
     return 0;
     */
-    int a [] {};
+    int a[10] {};  // Explicitly declare array size
     for(int i=0;i<10;i++){
         a[i]=i;
     }
     for(int i=0;i<10;i++){
-        cout<<a[i]<<",";
-        if(a[i]==a[-1]){
-            cout<<endl;
+        cout<<a[i];
+        if(i < 9) {
+            cout << ",";
         }
     }
+    cout << endl;
     
 }
