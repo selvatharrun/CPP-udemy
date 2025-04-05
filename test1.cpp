@@ -22,7 +22,7 @@ int main(){
     }
     for(int i=0;i<10;i++){
         cout<<a[i];
-        if(i < 9) {
+        if(a[i] != a[-1]) {
             cout << ",";
         }
     }
