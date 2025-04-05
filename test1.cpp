@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector> // Include the vector library
 using namespace std;
 int main(){
     /*
@@ -17,21 +16,16 @@ int main(){
     cout << c << endl;
     return 0;
     */
-    vector<int> a;  // Dynamic array using vector
-    int n;
-    cout << "Enter how many numbers you want: ";
-    cin >> n;
-
-    for(int i = 0; i < n; i++){
-        a.push_back(i);  // Add elements dynamically
+    int a[10] {};  // Explicitly declare array size
+    for(int i=0;i<10;i++){
+        a[i]=i;
     }
-
-    for(int i = 0; i < a.size(); i++){
-        cout << a[i];
-        if(i < a.size() - 1) {
+    for(int i=0;i<10;i++){
+        cout<<a[i];
+        if(i < 9) {
             cout << ",";
         }
     }
     cout << endl;
-
+    
 }
