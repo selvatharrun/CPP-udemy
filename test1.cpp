@@ -20,8 +20,8 @@ int main(){
 
     /*write a pro*/
 
-        vector<int> vector1(0);
-        vector<int> vector2(0);
+        vector<int> vector1;
+        vector<int> vector2;
 
         vector1.push_back(10);
         vector1.push_back(20);
@@ -35,7 +35,7 @@ int main(){
         cout << vector2.at(0) << endl;
         cout << vector2.size() << endl;
 
-        vector<int> vector2d(0)(0);
+        vector<vector<int>> vector2d;
         vector2d.push_back(vector1);
         vector2d.push_back(vector2);
     
