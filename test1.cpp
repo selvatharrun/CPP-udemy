@@ -38,6 +38,14 @@ int main(){
         vector<vector<int>> vector2d;
         vector2d.push_back(vector1);
         vector2d.push_back(vector2);
-        cout<<
+        
+        // Print 2D vector
+        for(const auto& row : vector2d) {
+            for(const auto& elem : row) {
+                cout << elem << " ";
+            }
+            cout << endl;
+        }
+        return 0;
     
 }
