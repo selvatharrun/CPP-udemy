@@ -21,7 +21,7 @@ int main(){
     /*write a pro*/ 
     int nc;
     
-    cin>>nc>>endl;;
+    cin>>nc;
     
     int dol;
     int quart;
@@ -31,9 +31,9 @@ int main(){
 
     int res;
     
-    if((a/100)>0){
-        dol=a/100;
-        res = a%100;
+    if((nc/100)>0){
+        dol=nc/100;
+        res = nc%100;
     }
     
     else if((res/25)>0 && res!=0){
@@ -60,7 +60,7 @@ int main(){
         cout<<"quarter: "<<quart<<endl;
         cout<<"dimes: "<<dimes<<endl;
         cout<<"nickels: "<<nickels<<endl;
-        cout<<"pennies: "<<pennies<<endl
+        cout<<"pennies: "<<pennies<<endl;
         return 0;
     }
 
