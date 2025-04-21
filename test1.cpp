@@ -20,7 +20,7 @@ int main(){
 
     /*write a pro*/
         bool res {false};
-        cout << boolalpha << endl;
+        cout << boolalpha;
         cout << res;
     
 }
