@@ -19,5 +19,8 @@ int main(){
     */
 
     /*write a pro*/
+        bool res {false};
+        cout << boolalpha << endl;
+        cout << res;
     
 }
