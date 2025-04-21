@@ -18,9 +18,51 @@ int main(){
     return 0;
     */
 
-    /*write a pro*/
-        bool res {false};
-        cout << boolalpha;
-        cout << res;
+    /*write a pro*/ 
+    int nc;
+    
+    cin>>nc>>endl;;
+    
+    int dol;
+    int quart;
+    int dimes;
+    int nickels;
+    int pennies;
+
+    int res;
+    
+    if((a/100)>0){
+        dol=a/100;
+        res = a%100;
+    }
+    
+    else if((res/25)>0 && res!=0){
+        quart=res/25;
+        res = res%25;
+    }
+
+    else if((res/10)>0 && res!=0){
+        dimes=res/10;
+        res = res%10;
+    }
+
+    else if((res/5)>0 && res!=0){
+        nickels=res/5;
+        res = res%5;
+    }
+
+    else if((res/1)>0 && res!=0){
+        pennies=res/1;
+    }
+
+    else{
+        cout<<"dollar: "<<dol<<endl;
+        cout<<"quarter: "<<quart<<endl;
+        cout<<"dimes: "<<dimes<<endl;
+        cout<<"nickels: "<<nickels<<endl;
+        cout<<"pennies: "<<pennies<<endl
+        return 0;
+    }
+
     
 }
