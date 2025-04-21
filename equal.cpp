@@ -25,4 +25,45 @@ int main(){
     //exercise
     if ( (age>=18 || (age>15 && parental_consent)) && ssn && !accidents)
         cout << "Yes, you can work.";
+
+    //exercise2
+    int nc;
+    cin >> nc;
+
+    int dol = 0;
+    int quart = 0;
+    int dimes = 0;
+    int nickels = 0;
+    int pennies = 0;
+
+    int res = nc;
+
+    if(res >= 100) {
+        dol = res/100;
+        res = res%100;
+    }
+
+    if(res >= 25) {
+        quart = res/25;
+        res = res%25;
+    }
+
+    if(res >= 10) {
+        dimes = res/10;
+        res = res%10;
+    }
+
+    if(res >= 5) {
+        nickels = res/5;
+        res = res%5;
+    }
+
+    pennies = res;
+
+    cout << "dollar: " << dol << endl;
+    cout << "quarter: " << quart << endl;
+    cout << "dimes: " << dimes << endl;
+    cout << "nickels: " << nickels << endl;
+    cout << "pennies: " << pennies << endl;
+
 }
