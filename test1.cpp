@@ -20,49 +20,43 @@ int main(){
 
     /*write a pro*/ 
     int nc;
+    cin >> nc;
     
-    cin>>nc;
-    
-    int dol;
-    int quart;
-    int dimes;
-    int nickels;
-    int pennies;
+    int dol = 0;
+    int quart = 0;
+    int dimes = 0;
+    int nickels = 0;
+    int pennies = 0;
 
-    int res;
+    int res = nc;
     
-    if((nc/100)>0){
-        dol=nc/100;
-        res = nc%100;
+    if(res >= 100) {
+        dol = res/100;
+        res = res%100;
     }
     
-    else if((res/25)>0 && res!=0){
-        quart=res/25;
+    if(res >= 25) {
+        quart = res/25;
         res = res%25;
     }
 
-    else if((res/10)>0 && res!=0){
-        dimes=res/10;
+    if(res >= 10) {
+        dimes = res/10;
         res = res%10;
     }
 
-    else if((res/5)>0 && res!=0){
-        nickels=res/5;
+    if(res >= 5) {
+        nickels = res/5;
         res = res%5;
     }
 
-    else if((res/1)>0 && res!=0){
-        pennies=res/1;
-    }
+    pennies = res;
 
-    else{
-        cout<<"dollar: "<<dol<<endl;
-        cout<<"quarter: "<<quart<<endl;
-        cout<<"dimes: "<<dimes<<endl;
-        cout<<"nickels: "<<nickels<<endl;
-        cout<<"pennies: "<<pennies<<endl;
-        return 0;
-    }
+    cout << "dollar: " << dol << endl;
+    cout << "quarter: " << quart << endl;
+    cout << "dimes: " << dimes << endl;
+    cout << "nickels: " << nickels << endl;
+    cout << "pennies: " << pennies << endl;
 
     
 }
